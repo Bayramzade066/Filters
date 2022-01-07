@@ -8,6 +8,9 @@ body{
 
 }
 
+
+
+
 .pr-1{
     padding-right: 1rem;
 }
@@ -37,14 +40,13 @@ body{
             border-color: darkcyan;
             padding: 0.4rem;
             input{
-                background-color: whitesmoke;
                 border: none;
                 outline: none;
                 font-size: 0.95rem;
                 letter-spacing: 0.05rem;
                 padding-left: 0.4rem;
                 width: 9.8rem;
-
+                color: grey;
             }
         }
     }
@@ -63,7 +65,11 @@ body{
 .wraps2{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    padding-left: 10vh;
 
     
     .wraps2-box{
@@ -74,11 +80,9 @@ body{
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin: 1.5rem;
-        background-size: cover;
-        background-repeat: no-repeat ;
-        background-position: center;
         transition: 0.5s;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
         p{
             font-size: 17px;
             letter-spacing: 1px;
@@ -91,6 +95,8 @@ body{
             align-items: center;
             position: relative;
             z-index: 999999;
+            color: #EB5757;
+            font-size: 20px;
         }
         img{
             position: absolute;

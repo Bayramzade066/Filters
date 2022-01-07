@@ -250,9 +250,10 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 2rem;
 }
 
 .wraps2 .wraps2-box {
@@ -273,14 +274,37 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  z-index: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .wraps2 .wraps2-box p {
-  opacity: 0;
   font-size: 17px;
   letter-spacing: 1px;
   cursor: default;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 999999;
+}
+
+.wraps2 .wraps2-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
 }
 
 html, body, div, span, applet, object, iframe,

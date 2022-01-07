@@ -10,7 +10,12 @@ let box = document.querySelectorAll(".wraps2-box")
 
 function PriceFilter(){
     input.forEach(input => {
+        input.addEventListener("focus",()=>{
+            input.value=""
+            input.style.color="black"
+        })
         input.addEventListener("keyup",(e)=>{
+            
             if(input.value>150){input.value=150;}else if(input.value<0){input.value=0;}
             if ((e.keyCode > 46 && e.keyCode < 58)|| (e.keyCode < 106 && e.keyCode > 95) || e.keyCode==8) { 
                     
@@ -29,13 +34,19 @@ function PriceFilter(){
                         box[i].style.transition="0.5s"
                         box[i].style.width="18rem"
                         box[i].style.height="25rem"
-                        box[i].style.margin="1.5rem"
+                        box[i].style.margin="2rem"
+                    }else if(input1.value=="" && input2.value==""){
+                        box[i].style.opacity="1"
+                        box[i].style.transition="0.5s"
+                        box[i].style.width="18rem"
+                        box[i].style.height="25rem"
+                        box[i].style.margin="2rem"
                     }else{
                         box[i].style.opacity="0"
                         box[i].style.transition="0.5s"
                         box[i].style.width="0rem"
                         box[i].style.height="0rem"
-                        box[i].style.margin="0.5rem"
+                        box[i].style.margin="0rem"
                     }
                 }
                 
@@ -57,7 +68,7 @@ let div = document.createElement("div")
 div.style.width=boxWidth + "px"
 div.style.height=boxHeight +"px"
 div.style.position="absolute"
-div.style.backgroundColor="rgba(0, 0, 0, 0.150)"
+div.style.backgroundColor="rgba(0, 0, 0, 0.350)"
 div.style.zIndex="1"
 div.style.transition="0.2s"
 div.style.opacity="0"

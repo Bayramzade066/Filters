@@ -1,0 +1,98 @@
+.buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(0, 0, 0, 0.212);
+  height: 11rem;
+}
+
+.buttons .btn {
+  width: 11rem;
+  height: 4rem;
+  margin: 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: #61accf;
+  font-size: 1.2rem;
+  letter-spacing: 1.2px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  font-weight: 600;
+}
+
+.buttons :nth-child(1):hover {
+  cursor: pointer;
+  color: whitesmoke;
+  background-color: #7f3888;
+}
+
+.buttons :nth-child(2):hover {
+  cursor: pointer;
+  color: whitesmoke;
+  background-color: black;
+}
+
+.buttons :nth-child(3):hover {
+  cursor: pointer;
+  color: whitesmoke;
+  background-color: green;
+}
+
+.buttons :nth-child(4):hover {
+  cursor: pointer;
+  color: whitesmoke;
+  background-color: yellow;
+}
+
+.buttons :nth-child(5):hover {
+  cursor: pointer;
+  color: whitesmoke;
+  background-color: aqua;
+}
+
+.wraps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 3rem;
+}
+
+.wraps .single {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 13rem;
+  height: 13rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1.5rem;
+  color: whitesmoke;
+  font-size: 17px;
+  letter-spacing: 1px;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.wraps .active {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}

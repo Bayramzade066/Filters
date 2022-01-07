@@ -1,0 +1,69 @@
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.212);
+    height: 11rem;
+    
+    .btn{
+        width: 11rem;
+        height: 4rem;
+        margin: 25px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(97, 172, 207) ;
+        font-size: 1.2rem;
+        letter-spacing: 1.2px;
+        transition: 0.5s all;
+        font-weight: 600;
+    }:nth-child(1):hover{
+        cursor: pointer;
+        color: whitesmoke;
+        background-color: rgb(127, 56, 136);
+    }:nth-child(2):hover{
+        cursor: pointer;
+        color: whitesmoke;
+        background-color: black;
+    }:nth-child(3):hover{
+        cursor: pointer;
+        color: whitesmoke;
+        background-color: green;
+    }:nth-child(4):hover{
+        cursor: pointer;
+        color: whitesmoke;
+        background-color: yellow;
+    }:nth-child(5):hover{
+        cursor: pointer;
+        color: whitesmoke;
+        background-color: aqua;
+    }
+    
+}
+
+.wraps{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 3rem;
+    .single{
+        box-sizing: border-box;
+        width: 13rem;
+        height: 13rem;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin: 1.5rem;
+        color: whitesmoke;
+        font-size: 17px;
+        letter-spacing: 1px;
+        
+        opacity:1;        
+        visibility :visible;
+        transform :scale(1);
+        transition:0.5s;
+    }
+    .active{
+        transform: scale(0);
+    }
+}

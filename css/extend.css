@@ -1,0 +1,427 @@
+.buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(0, 0, 0, 0.212);
+  height: 11rem;
+}
+
+.buttons .btn {
+  width: 11rem;
+  height: 4rem;
+  margin: 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: #61accf;
+  font-size: 1.2rem;
+  letter-spacing: 1.2px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  font-weight: 600;
+}
+
+.buttons :nth-child(1):hover {
+  cursor: pointer;
+  color: whitesmoke;
+  background-color: #7f3888;
+}
+
+.buttons :nth-child(2):hover {
+  cursor: pointer;
+  color: whitesmoke;
+  background-color: black;
+}
+
+.buttons :nth-child(3):hover {
+  cursor: pointer;
+  color: whitesmoke;
+  background-color: green;
+}
+
+.buttons :nth-child(4):hover {
+  cursor: pointer;
+  color: whitesmoke;
+  background-color: yellow;
+}
+
+.buttons :nth-child(5):hover {
+  cursor: pointer;
+  color: whitesmoke;
+  background-color: aqua;
+}
+
+.wraps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 3rem;
+}
+
+.wraps .single {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 13rem;
+  height: 13rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1.5rem;
+  color: whitesmoke;
+  font-size: 17px;
+  letter-spacing: 1px;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.wraps .active {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body {
+  background: #E0EAFC;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#CFDEF3), to(#E0EAFC));
+  background: linear-gradient(to right, #CFDEF3, #E0EAFC);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.pr-1 {
+  padding-right: 1rem;
+}
+
+.container {
+  width: 100%;
+  height: 11rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #EB5757;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#000000), to(#EB5757));
+  background: linear-gradient(to right, #000000, #EB5757);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container .filter-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .filter-div .input-div {
+  background-color: #f8f8f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 14.3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border: 0.7px solid;
+  height: 1.5rem;
+  border-radius: 1rem;
+  border-color: darkcyan;
+  padding: 0.4rem;
+}
+
+.container .filter-div .input-div input {
+  background-color: whitesmoke;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.05rem;
+  padding-left: 0.4rem;
+  width: 9.8rem;
+}
+
+.container .img-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .img-div img {
+  margin-top: 0.3rem;
+  width: 10rem;
+  height: 100%;
+}
+
+.wraps2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wraps2 .wraps2-box {
+  position: relative;
+  width: 18rem;
+  height: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 1.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+.wraps2 .wraps2-box p {
+  opacity: 0;
+  font-size: 17px;
+  letter-spacing: 1px;
+  cursor: default;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.container {
+  position: fixed;
+  top: 35%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 0;
+  height: 15rem;
+}
+
+.container .boxs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 800px;
+}
+
+.container .boxs a {
+  text-decoration: none;
+}
+
+.container .boxs a .box {
+  width: 18rem;
+  background-color: #5bd4ac;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 9px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.container .boxs a .box p {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #1b1b1b;
+  font-size: 20px;
+  padding: 1.4rem;
+  letter-spacing: 1px;
+}
+
+.container .boxs a :hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  border-radius: 20px;
+}
+
+.container .boxs a :hover p {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  letter-spacing: 2px;
+}

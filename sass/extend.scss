@@ -1,0 +1,65 @@
+@import "./easy.scss";
+@import "./normal.scss";
+@import "./hard.scss";
+@import "./reset.scss";
+
+
+
+
+
+// Home page Sass
+video { 
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;    
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+.container{
+    position: fixed;
+    top: 35%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    height: 15rem;
+    .boxs{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 800px;
+        a{
+            text-decoration: none;
+            .box{
+                width: 18rem;
+                background-color: rgb(91, 212, 172);
+                text-align: center;
+                align-items: center;
+                border-radius: 9px;
+                transition: 0.5s all;
+                p{
+                    transition: 0.5s all;
+                color: rgb(27, 27, 27);
+                font-size: 20px;
+                // font-weight: bold;
+                padding: 1.4rem;
+                // text-transform: uppercase;
+                letter-spacing: 1px;
+
+                }
+            }:hover{
+                transition: 0.5s all;
+                border-radius: 20px;
+                p{
+                    transition: 0.5s all;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+}

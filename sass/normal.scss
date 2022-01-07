@@ -1,0 +1,104 @@
+@import "./reset.scss";
+
+
+body{
+    background: #E0EAFC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.pr-1{
+    padding-right: 1rem;
+}
+.container{
+    width: 100%;
+    height: 11rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #EB5757;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #000000, #EB5757);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #000000, #EB5757); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    .filter-div{
+        display: flex;
+        align-items: center;
+        .input-div{
+            background-color: rgb(248, 248, 248);
+            display: flex;
+            width: 14.3rem;
+            align-items: center;
+            text-align: center;
+            border: 0.7px solid;
+            height: 1.5rem;
+            border-radius: 1rem;
+            border-color: darkcyan;
+            padding: 0.4rem;
+            input{
+                background-color: whitesmoke;
+                border: none;
+                outline: none;
+                font-size: 0.95rem;
+                letter-spacing: 0.05rem;
+                padding-left: 0.4rem;
+                width: 9.8rem;
+
+            }
+        }
+    }
+    .img-div{
+        display: flex;
+
+        img{
+        margin-top: 0.3rem;
+        width: 10rem;
+        height: 100%;
+        }
+    }
+
+}
+
+.wraps2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    
+    .wraps2-box{
+        position: relative;
+        width: 18rem;
+        height: 25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 1.5rem;
+        background-size: cover;
+        background-repeat: no-repeat ;
+        background-position: center;
+        transition: 0.5s;
+        p{
+            font-size: 17px;
+            letter-spacing: 1px;
+            cursor:default;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 999999;
+        }
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -5;
+        }
+    }
+}

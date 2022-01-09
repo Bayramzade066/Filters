@@ -223,13 +223,13 @@ body {
 }
 
 .container .filter-div .input-div input {
-  background-color: whitesmoke;
   border: none;
   outline: none;
   font-size: 0.95rem;
   letter-spacing: 0.05rem;
   padding-left: 0.4rem;
   width: 9.8rem;
+  color: grey;
 }
 
 .container .img-div {
@@ -253,7 +253,10 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding-left: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  padding-left: 10vh;
 }
 
 .wraps2 .wraps2-box {
@@ -270,12 +273,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin: 1.5rem;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
 }
 
 .wraps2 .wraps2-box p {
@@ -296,6 +297,8 @@ body {
           align-items: center;
   position: relative;
   z-index: 999999;
+  color: #EB5757;
+  font-size: 20px;
 }
 
 .wraps2 .wraps2-box img {

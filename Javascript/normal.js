@@ -5,7 +5,6 @@ let wraps = document.querySelectorAll(".wraps2")
 let box = document.querySelectorAll(".wraps2-box")
 
 
-
 //Price Filter 
 
 function PriceFilter(){
@@ -27,8 +26,9 @@ function PriceFilter(){
                 for(i=0;i<box.length;i++){
                     
                     myString=parseInt(box[i].dataset.filter)
-                    if(myString>=input1.value && myString<=input2.value){
-                        console.log(input1.value,box[i].dataset.filter,input2.value)
+                    input1Value=parseInt(input1.value)
+                    input2Value=parseInt(input2.value)
+                    if(myString>=input1Value && myString<=input2Value){
                         
                         box[i].style.opacity="1"
                         box[i].style.transition="0.5s"

@@ -374,6 +374,7 @@
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
+  cursor: pointer;
 }
 
 .content {
@@ -387,6 +388,6 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: #396afc9f;
+  background-color: #396afc69;
   text-align: center;
 }

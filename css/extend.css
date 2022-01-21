@@ -310,6 +310,241 @@ body {
   z-index: -5;
 }
 
+/* Hide every HTML inside .hover that would render outside*/
+.hover {
+  overflow: hidden;
+}
+
+/*Animate overlay and move it 'above'*/
+.hover .overlay {
+  -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Mouse enter event */
+.hover.mouseenter.top .overlay {
+  -webkit-animation-name: slide--enter-top;
+          animation-name: slide--enter-top;
+}
+
+.hover.mouseenter.right .overlay {
+  -webkit-animation-name: slide--enter-right;
+          animation-name: slide--enter-right;
+}
+
+.hover.mouseenter.bottom .overlay {
+  -webkit-animation-name: slide--enter-bottom;
+          animation-name: slide--enter-bottom;
+}
+
+.hover.mouseenter.left .overlay {
+  -webkit-animation-name: slide--enter-left;
+          animation-name: slide--enter-left;
+}
+
+/* Mouse leave event */
+.hover.mouseleave.top .overlay {
+  -webkit-animation-name: slide--leave-top;
+          animation-name: slide--leave-top;
+}
+
+.hover.mouseleave.right .overlay {
+  -webkit-animation-name: slide--leave-right;
+          animation-name: slide--leave-right;
+}
+
+.hover.mouseleave.bottom .overlay {
+  -webkit-animation-name: slide--leave-bottom;
+          animation-name: slide--leave-bottom;
+}
+
+.hover.mouseleave.left .overlay {
+  -webkit-animation-name: slide--leave-left;
+          animation-name: slide--leave-left;
+}
+
+/* Sliding animations ! */
+@-webkit-keyframes slide--enter-top {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@keyframes slide--enter-top {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@-webkit-keyframes slide--enter-right {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes slide--enter-right {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@-webkit-keyframes slide--enter-bottom {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes slide--enter-bottom {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@-webkit-keyframes slide--enter-left {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes slide--enter-left {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@-webkit-keyframes slide--leave-top {
+  0% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  100% {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes slide--leave-top {
+  0% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  100% {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+}
+
+@-webkit-keyframes slide--leave-right {
+  0% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  100% {
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+}
+
+@keyframes slide--leave-right {
+  0% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  100% {
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+}
+
+@-webkit-keyframes slide--leave-bottom {
+  0% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+}
+
+@keyframes slide--leave-bottom {
+  0% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+}
+
+@-webkit-keyframes slide--leave-left {
+  0% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes slide--leave-left {
+  0% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+}
+
 .container1 {
   width: 100%;
   height: 10rem;
@@ -410,12 +645,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 1rem 0rem;
   border-left: 1px solid gray;
   border-right: 1px solid gray;
   border-bottom: 1px solid gray;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  cursor: pointer;
 }
 
 .wrap3 .box img {
@@ -432,15 +665,42 @@ body {
 }
 
 .wrap3 .box .info-text p {
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   margin-bottom: 10px;
   letter-spacing: 1px;
+  font-weight: 600;
   font-style: italic;
-  color: teal;
+  color: black;
 }
 
 #Model option {
   display: none;
+}
+
+.hover {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #396afc9f;
+  text-align: center;
 }
 
 html, body, div, span, applet, object, iframe,

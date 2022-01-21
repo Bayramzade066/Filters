@@ -12,7 +12,7 @@ year.val("")
 
 select.change(function(){   
     
-    box.each(function(){
+    hover.each(function(){
         if( $(this).data("brand") == brand.val() && model.val()==null && year.val()==null){
             $(this).delay(700).fadeIn()
             
@@ -28,13 +28,11 @@ select.change(function(){
             $(this).delay(700).fadeOut()
         }
     
-    
-    
-    
-    
+
     
     })
 })
+        
 
 brand.change(function(){
     Moption.each(function(){
@@ -42,12 +40,20 @@ brand.change(function(){
             $(this).show()
         }else{
             model.val("")
+            year.val("")
             $(this).hide()
         }
-    });
-
+    }
     
-   
+    );
+    
+    hover.each(function(){
+        if(brand.val()==$(this).data("brand")){
+            $(this).delay(700).fadeIn()
+        }else{
+            $(this).delay(700).fadeOut()
+        }
+    })
 })
 
 reset.click(function(){
@@ -62,8 +68,8 @@ for(let i = 0; i < hover.length; i++){
 
 $(window).on('load', function(){
     for(let i = 0; i < hover.length; i++){
-        let target = Math.floor(Math.random() * hover .length -1) + 1;
-        let target2 = Math.floor(Math.random() * hover .length -1) +1;
+        let target = Math.floor(Math.random() * hover .length -2) + 2;
+        let target2 = Math.floor(Math.random() * hover .length -2) +2;
         hover .eq(target).before(hover .eq(target2));
     }
 });

@@ -1,3 +1,6 @@
+// hover start
+
+
 /* Hide every HTML inside .hover that would render outside*/
 .hover {
     overflow: hidden;
@@ -74,7 +77,7 @@
   }
   
   
-
+// hover end
 
 
 .container1{
@@ -168,18 +171,17 @@
     }
 }
 
+
+
+// hover
 .hover {
     position: relative;
     display: flex;
     align-items: center;
-    justify-items: center;
     cursor: pointer;
   }
   
-  .content {
-    flex: 1;
-    text-align: center;
-  }
+
   
   .overlay {
     position: absolute;

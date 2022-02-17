@@ -24,7 +24,8 @@ select.change(function(){
             $(this).attr("style", "margin:1rem 0")
         }else if($(this).data("brand") == brand.val() && model.val()==null && $(this).data("year") == year.val()){
             $(this).delay(700).fadeIn()
-        }else{
+        }
+        else{
             $(this).delay(700).fadeOut()
         }
     

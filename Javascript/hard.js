@@ -11,14 +11,11 @@ model.val("")
 year.val("")
 
 select.change(function(){   
-    
     hover.each(function(){
         if( $(this).data("brand") == brand.val() && model.val()==null && year.val()==null){
-            $(this).delay(700).fadeIn()
-            
+            $(this).delay(700).fadeIn() 
         }else if( $(this).data("brand") == brand.val() &&  $(this).data("model") == model.val() && year.val()==null  ){
             $(this).delay(700).fadeIn()
-
         }else if($(this).data("brand") == brand.val() &&  $(this).data("model") == model.val() && $(this).data("year") == year.val()){
             $(this).delay(700).fadeIn()
             $(this).attr("style", "margin:1rem 0")
@@ -28,9 +25,6 @@ select.change(function(){
         else{
             $(this).delay(700).fadeOut()
         }
-    
-
-    
     })
 })
         
@@ -45,7 +39,6 @@ brand.change(function(){
             $(this).hide()
         }
     }
-    
     );
     
     hover.each(function(){

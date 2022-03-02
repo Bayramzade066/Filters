@@ -28,7 +28,6 @@ function PriceFilter(){
                     input1Value=parseInt(input1.value)
                     input2Value=parseInt(input2.value)
                     if(myString>=input1Value && myString<=input2Value){
-                        
                         box[i].style.opacity="1"
                         box[i].style.transition="0.5s"
                         box[i].style.width="18rem"

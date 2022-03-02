@@ -47,8 +47,6 @@ function PriceFilter(){
                         box[i].style.margin="0rem"
                     }
                 }
-                
-    
                 }
     
         })

@@ -22,7 +22,6 @@ function PriceFilter(){
                 input.value=""
             }
             for(let i =0;i<wraps.length;i++){
-                
                 for(i=0;i<box.length;i++){
                     
                     myString=parseInt(box[i].dataset.filter)

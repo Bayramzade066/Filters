@@ -6,7 +6,6 @@ let Moption = $("#Model > option")
 let select = $("select")
 let reset = $(".reset")
 let hover = $(".hover")
-
 brand.val("")
 model.val("")
 year.val("")

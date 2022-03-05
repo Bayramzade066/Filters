@@ -118,7 +118,6 @@ box.forEach(Ananas => {
 });
 
 let p = document.querySelectorAll("P")
-
 p.forEach(pitem => {
     pitem.addEventListener("mouseover",()=>{
         div.style.opacity="1"

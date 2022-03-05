@@ -53,8 +53,6 @@ function PriceFilter(){
 }
 PriceFilter()
 
-
-
 let boxWidth = box[0].offsetWidth;
 let boxHeight = box[0].offsetHeight;
 

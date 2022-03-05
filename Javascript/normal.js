@@ -55,7 +55,6 @@ PriceFilter()
 
 let boxWidth = box[0].offsetWidth;
 let boxHeight = box[0].offsetHeight;
-
 let div = document.createElement("div")
 div.style.width=boxWidth + "px"
 div.style.height=boxHeight +"px"

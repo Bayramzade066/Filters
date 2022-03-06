@@ -78,8 +78,7 @@ const getHoverDirection = function (event) {
     // Width and height of current item
     var w = item.offsetWidth;
     var h = item.offsetHeight;
-  
-    // Calculate the x/y value of the pointer entering/exiting, relative to the center of the item.
+
     var x = (event.clientX - item.getBoundingClientRect().left - (w / 2)) * (w > h ? (h / w) : 1);
     var y = (event.clientY - item.getBoundingClientRect().top - (h / 2)) * (h > w ? (w / h) : 1);
   

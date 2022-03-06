@@ -86,7 +86,6 @@ const getHoverDirection = function (event) {
   };
   
   document.addEventListener('DOMContentLoaded', function (event) {
-    // Loop over items (in a IE11 compatible way).
     var items = document.getElementsByClassName('hover');
     for (var i = 0; i < items.length; i++) {
   

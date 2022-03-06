@@ -80,7 +80,6 @@ const getHoverDirection = function (event) {
     var h = item.offsetHeight;
   
     // Calculate the x/y value of the pointer entering/exiting, relative to the center of the item.
-    // Scale (sort of normalize) the coordinate on smallest side to the scale of the longest.
     var x = (event.clientX - item.getBoundingClientRect().left - (w / 2)) * (w > h ? (h / w) : 1);
     var y = (event.clientY - item.getBoundingClientRect().top - (h / 2)) * (h > w ? (w / h) : 1);
   

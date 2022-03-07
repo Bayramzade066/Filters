@@ -93,8 +93,6 @@ const getHoverDirection = function (event) {
         items[i].addEventListener(eventname, function (event) {
   
           var dir = getHoverDirection(event);
-
-          // > If support for IE11 is needed.
           event.currentTarget.classList.remove('mouseenter');
           event.currentTarget.classList.remove('mouseleave');
           event.currentTarget.classList.remove('top');

@@ -94,7 +94,6 @@ const getHoverDirection = function (event) {
   
           var dir = getHoverDirection(event);
   
-          // Reset classes.
           // event.currentTarget.className = 'item hover';
           // > If support for IE11 is not needed.
           // event.currentTarget.classList.remove('mouseenter', 'mouseleave', 'top', 'right', 'bottom', 'left');

@@ -89,7 +89,6 @@ const getHoverDirection = function (event) {
     var items = document.getElementsByClassName('hover');
     for (var i = 0; i < items.length; i++) {
   
-      // Loop over the registered event types.
       ['mouseenter', 'mouseleave'].forEach(function (eventname) {
         items[i].addEventListener(eventname, function (event) {
   

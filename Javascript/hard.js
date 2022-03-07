@@ -92,7 +92,6 @@ const getHoverDirection = function (event) {
       ['mouseenter', 'mouseleave'].forEach(function (eventname) {
         items[i].addEventListener(eventname, function (event) {
   
-          // Retrieve the direction of the enter/leave event.
           var dir = getHoverDirection(event);
   
           // Reset classes.

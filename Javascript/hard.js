@@ -100,7 +100,6 @@ const getHoverDirection = function (event) {
           event.currentTarget.classList.remove('bottom');
           event.currentTarget.classList.remove('left');
           event.currentTarget.className += ' ' + event.type + ' ' + dir;
-  
         }, false);
       });
     }

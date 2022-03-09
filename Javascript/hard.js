@@ -91,7 +91,6 @@ const getHoverDirection = function (event) {
   
       ['mouseenter', 'mouseleave'].forEach(function (eventname) {
         items[i].addEventListener(eventname, function (event) {
-  
           var dir = getHoverDirection(event);
           event.currentTarget.classList.remove('mouseenter');
           event.currentTarget.classList.remove('mouseleave');

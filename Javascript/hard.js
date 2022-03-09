@@ -81,7 +81,6 @@ const getHoverDirection = function (event) {
     var y = (event.clientY - item.getBoundingClientRect().top - (h / 2)) * (h > w ? (w / h) : 1);
   
     var d = Math.round(Math.atan2(y, x) / 1.57079633 + 5) % 4;
-  
     return directions[d];
   };
   

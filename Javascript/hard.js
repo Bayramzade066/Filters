@@ -74,7 +74,6 @@ $(window).on('load', function(){
 const getHoverDirection = function (event) {
     var directions = ['top', 'right', 'bottom', 'left'];
     var item = event.currentTarget;
-
     var h = item.offsetHeight;
     var x = (event.clientX - item.getBoundingClientRect().left - (w / 2)) * (w > h ? (h / w) : 1);
     var y = (event.clientY - item.getBoundingClientRect().top - (h / 2)) * (h > w ? (w / h) : 1);
